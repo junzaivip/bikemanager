@@ -66,3 +66,13 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+
+安装插件：
+ yarn add react-router-dom axios less-loader
+ 
+暴露所有的插件
+yarn eject
+ 
+ 
