@@ -74,5 +74,65 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
  
 暴露所有的插件
 yarn eject
+
+添加less支持：
+```
+ {
+              test: cssModuleRegex,
+              use: getStyleLoaders({
+                importLoaders: 1,
+                sourceMap: isEnvProduction && shouldUseSourceMap,
+                modules: true,
+                getLocalIdent: getCSSModuleLocalIdent,
+              }),
+            },
+
+              {
+                  test: lessRegex,
+                  exclude: cssModuleRegex,
+                  use: getStyleLoaders({
+                      importLoaders: 1,
+                      sourceMap: isEnvProduction && shouldUseSourceMap,
+                  }),
+                  // Don't consider CSS imports dead code even if the
+                  // containing package claims to have no side effects.
+                  // Remove this when webpack adds a warning or an error for this.
+                  // See https://github.com/webpack/webpack/issues/6571
+                  sideEffects: true,
+              },
+              // Adds support for CSS Modules (https://github.com/css-modules/css-modules)
+              // using the extension .module.css
+              {
+                  test: lessModuleRegex,
+                  use: getStyleLoaders({
+                      importLoaders: 1,
+                      sourceMap: isEnvProduction && shouldUseSourceMap,
+                      modules: true,
+                      getLocalIdent: getCSSModuleLocalIdent,
+                  },
+                      'less-loader'),
+              },
+ 
+ ```
+ 
+安装支付宝插件
+yarn add antd
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
