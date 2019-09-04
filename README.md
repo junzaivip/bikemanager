@@ -117,6 +117,15 @@ yarn eject
  
 安装支付宝插件
 yarn add antd
+
+添加按需加载组件
+yarn add babel-plugin-import
+
+yarn add customize-cra
+
+
+
+
  
  
  
