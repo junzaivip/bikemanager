@@ -19,6 +19,18 @@
 
     .breadcrumb-title{
       text-align: center;
+      font-size: 22px;
+      &:after{
+        position:absolute;
+        content:'';
+        //background-color: red;
+        left: 100px;
+        top:39px;
+
+        border-top: 9px solid @colorM;
+        border-left: 12px solid #ff000000;
+        border-right: 12px solid #ff000000;
+      }
     }
     .weather{
       text-align: right;
