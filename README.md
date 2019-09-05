@@ -123,6 +123,12 @@ yarn add babel-plugin-import
 
 yarn add customize-cra
 
+[babel-plugin-import](https://github.com/ant-design/babel-plugin-import)
+
+安装jspnp
+yarn add jsonp
+
+
 
 
 
