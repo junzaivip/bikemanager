@@ -8,6 +8,9 @@ export default class Main extends React.Component{
         return(
             <div>
                 This is Main!
+                <Link to="/main/a">嵌套路由</Link>
+                <hr/>
+                {this.props.children}
             </div>
         )
     }
