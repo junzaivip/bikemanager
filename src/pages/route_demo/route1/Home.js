@@ -30,10 +30,7 @@ export default class Home extends React.Component{
 
                    <hr/>
                    <Switch>
-                       <Route path="/" exact={true} component={Main}></Route>
-                       <Route path="/about" component={About}></Route>
-                       <Route path="/topics" component={Topic}></Route>
-                       <Route path="/main" component={Main}></Route>
+
                    </Switch>
                </div>
 
