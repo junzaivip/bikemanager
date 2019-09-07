@@ -10,7 +10,7 @@ export default class Home extends React.Component{
                 <div>
                     <ul>
                         <li>
-                            <Link to="/" > Home1</Link>
+                            <Link to="/main" > Home1</Link>
                         </li>
                         <li>
                             <Link to="/about">About</Link>
@@ -18,9 +18,9 @@ export default class Home extends React.Component{
                         <li>
                             <Link to="/topics">Topic</Link>
                         </li>
-                        <li>
-                            <Link to="/main">Main</Link>
-                        </li>
+                        {/*<li>*/}
+                            {/*<Link to="/main">Main</Link>*/}
+                        {/*</li>*/}
 
                     </ul>
 

@@ -14,10 +14,16 @@ export default class IRouter extends React.Component{
         return(
             <Router>
               <Home>
-                  <Route path="/" exact={true} component={Main}></Route>
+                  {/*<Route path="/" exact={true} component={Main}></Route>*/}
+                  <Route path="/main" render={()=>
+                  <Main>
+                      <Route path="/main/a" component={About}></Route>
+                  </Main>
+                  }></Route>
+
+
                   <Route path="/about" component={About}></Route>
                   <Route path="/topics" component={Topic}></Route>
-                  <Route path="/main" component={Main}></Route>
 
               </Home>
             </Router>
