@@ -1,8 +1,11 @@
+import React from 'react'
+import {Menu, Icon} from 'antd';
+import { NavLink } from 'react-router-dom'
 import menuConfig from './../../config/menuConfig'
 import './index.less'
 
-import React from 'react'
-import {Menu, Icon} from 'antd';
+
+
 
 
 
@@ -32,7 +35,10 @@ export default class Navleft extends React.Component {
                 )
             }
             return <Menu.Item title={item.title} key={item.key}>
-                {item.title}
+                <NavLink to={item.key}>
+                    {item.title}
+                </NavLink>
+
             </Menu.Item>
 
 
