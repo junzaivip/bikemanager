@@ -4,8 +4,10 @@ import App from './App'
 import Login from './pages/login'
 import Admin from './admin'
 import Buttons from './pages/ui/buttons'
+import BasicTable from './pages/table/basicTable'
 import Home from './pages/home'
 import NoMatch from './pages/nomatch'
+
 
 
 export default class BRouter extends React.Component{
@@ -20,6 +22,13 @@ export default class BRouter extends React.Component{
                             <Switch>
                                 <Route path="/admin/home" component={Home}/>
                                 <Route path="/admin/ui/buttons" component={Buttons}/>
+                                <Route path="/admin/table/basic" component={BasicTable}/>
+
+
+
+
+
+
                                 <Route  component={NoMatch}/>
                             </Switch>
                         </Admin>
